@@ -1,0 +1,94 @@
+body {
+    padding: px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-image: url("./images/ingredient-background.png");
+    animation: slidedown 15s linear infinite;
+    font-family: Encode Sans;
+  }
+  @keyframes slidedown {
+    0% {
+        background-position:  0 -1000px ;
+      }
+      95% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: 0px 0;
+      }
+  }
+
+  #title {
+    color: #008938;
+  }
+
+  #game-intro {
+    padding: 200px;
+  }
+  
+  #game-container {
+    display: flex;
+    width: 100vw;
+    padding: 0px;
+    justify-content: center;
+  }
+  
+  #game-screen {
+    display: none;
+    align-content: center;
+    padding: 20px 0px;
+    overflow: hidden;
+    position: relative;
+    background-image: url(./images/game-background2.png); 
+    background-size: cover;
+    animation: slide 10s linear infinite;
+  }
+  
+  @keyframes slide {
+    0% {
+      background-position: -1000px 0 ;
+    }
+    95% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 0px 0;
+    }
+  }
+  
+  #game-end {
+    display: none;
+    padding: 200px;
+    color:#008938; 
+  }
+  
+  .game-intro p {
+    font-size: 18px;
+    font-family: "Verdana";
+  }
+  
+  .logo-img {
+    width: 550px;
+  }
+
+  .veggies-img {
+    width: 450px; 
+  }
+  
+  .arrows-img {
+    width: 240px;
+  }
+  
+  body button {
+    font-size: 30px;
+    background-color: #008938 ;
+    font-weight: 500;
+    color: #fff;
+    font-family: Encode Sans;
+    padding: 20px 40px;
+    border: 0;
+    box-shadow: 0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
